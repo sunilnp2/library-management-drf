@@ -33,7 +33,7 @@ Make sure you have the following tools installed:
 
    ```bash
    git clone https://github.com/sunilnp2/library-management-drf.git
-   cd library-management
+   cd library-management-drf
 
 2. Install dependencies:
 
@@ -55,12 +55,6 @@ Make sure you have the following tools installed:
     ```bash
     python manage.py runserver
 The API will be accessible at http://localhost:8000
-
-6. Start Unit Testing
-     ```bash
-     python manage.py test
-Testing will show OK if all tests are satisfied.
-
 
 
 ## API Documentation
