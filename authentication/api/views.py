@@ -20,7 +20,7 @@ class SignUpSerializerView(APIView):
         try:
             serializer.is_valid(raise_exception=True) 
             serializer.save()
-            return Response("Successfully Registered",serializer.data, status=status.HTTP_201_CREATED)
+            return Response("Successfully Registered", status=status.HTTP_201_CREATED)
         except ValidationError as e:
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
