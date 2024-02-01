@@ -40,20 +40,55 @@ Make sure you have the following tools installed:
     ```bash
     pip install -r requirements.txt
 
-3. Apply database migrations:
+3. Configure Database
+  
+   ```bash
+     PostgreSQL Database
+     DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'lms', # your database name
+         'USER': 'sunil', #user db user
+         'PASSWORD': 'sunil', #user password
+         'HOST': '127.0.0.1',
+         'PORT': '5432',
+     }
+    }
+
+   For Sqlite Database
+       DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / "db.sqlite3",
+        }
+    }
+
+   
+
+4. Apply database migrations:
     ```bash
+    Windows
     python manage.py makemigrations
     python manage.py migrate
+
+    Linux
+    python3 manage.py makemigrations
+    python3 manage.py migrate
     
-4. Create Superuser:
+5. Create Superuser:
     ```bash
     python manage.py createsuperuser
+
+    python3 manage.py createsuperuser
+    
     test@gmail.com
     test123
 
-5. Start the development server:
+6. Start the development server:
     ```bash
     python manage.py runserver
+
+    python3 manage.py runserver
 The API will be accessible at http://localhost:8000
 
 
