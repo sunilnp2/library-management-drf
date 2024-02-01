@@ -1,6 +1,7 @@
 # Library Management System API
 
 This Django REST Framework (DRF) project manages a library system with features like registration, authentication book listing, borrowing, and returning.
+with complete unit testing of models, serializer, and views.
 
 ## Table of Contents
 
@@ -55,7 +56,16 @@ Make sure you have the following tools installed:
     test@gmail.com
     test123
 
+6. Start the development server:
+    ```bash
+    python manage.py runserver
 The API will be accessible at http://localhost:8000
+
+7. Start Unit Testing
+     ```bash
+     python manage.py test
+Testing will show OK if all tests are satisfied.
+
 
 
 ## API Documentation
