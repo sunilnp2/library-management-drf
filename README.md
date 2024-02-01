@@ -44,24 +44,19 @@ Make sure you have the following tools installed:
     ```bash
     python manage.py makemigrations
     python manage.py migrate
-
-4. Apply database migrations:
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
     
-5. Create Superuser:
+4. Create Superuser:
     ```bash
     python manage.py createsuperuser
     test@gmail.com
     test123
 
-6. Start the development server:
+5. Start the development server:
     ```bash
     python manage.py runserver
 The API will be accessible at http://localhost:8000
 
-7. Start Unit Testing
+6. Start Unit Testing
      ```bash
      python manage.py test
 Testing will show OK if all tests are satisfied.
