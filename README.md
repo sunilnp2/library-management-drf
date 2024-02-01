@@ -31,7 +31,7 @@ Make sure you have the following tools installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/library-management.git
+   git clone https://github.com/sunilnp2/library-management-drf.git
    cd library-management
 
 2. Install dependencies:
@@ -44,9 +44,16 @@ Make sure you have the following tools installed:
     python manage.py makemigrations
     python manage.py migrate
 
-4. Start the development server:
+4. Apply database migrations:
     ```bash
-    python manage.py runserver
+    python manage.py makemigrations
+    python manage.py migrate
+    
+5. Create Superuser:
+    ```bash
+    python manage.py createsuperuser
+    test@gmail.com
+    test123
 
 The API will be accessible at http://localhost:8000
 
