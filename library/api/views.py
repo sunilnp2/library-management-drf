@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authentication import BasicAuthentication
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
 from django.utils import timezone
 
 class BookCreateReadAPIView(APIView):
@@ -59,7 +59,7 @@ class BookDetailAPIView(APIView):
 
     Endpoint :
         - http://localhost:8000/library/api/create-book-detail/ - Create Detail of specific book
-        - http://localhost:8000/library/api/book-detail/id - Retrive book detail and update
+        - http://localhost:8000/library/api/book-detail/id/ - Retrive book detail and update
         
     """
     authentication_classes = [BasicAuthentication]
