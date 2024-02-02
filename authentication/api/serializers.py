@@ -17,7 +17,7 @@ class SignUpSerializer(serializers.ModelSerializer):
         elif value[0].isdigit():
             raise serializers.ValidationError("Email must start with a letter.")
 
-        end_strings = [".gmail.com", ".yahoo.com", ".hotmail.com", "yopmail.com", "tempmail.com"]
+        end_strings = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@yopmail.com", "tempmail.com"]
         val = any(value.endswith(end_str) for end_str in end_strings)
         if not val:
             raise serializers.ValidationError("Invalid email format.")
