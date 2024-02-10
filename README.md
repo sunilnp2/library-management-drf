@@ -146,7 +146,7 @@ The API will be accessible at http://localhost:8000
   {
     "title": "Rich Dad Poor Dad",
     "isbn": "4354",
-    "published_date": "2020-040-23"
+    "published_date": "2020-04-23"
     "genre": "finance"
   }
 
